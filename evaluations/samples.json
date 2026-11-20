@@ -1,0 +1,28 @@
+[
+  {
+    "name": "first_page",
+    "input": {"page_num": 1, "page_size": 2},
+    "expected_status": 200,
+    "expected_code": 1,
+    "expected_count": 2
+  },
+  {
+    "name": "second_page",
+    "input": {"page_num": 2, "page_size": 2},
+    "expected_status": 200,
+    "expected_code": 1,
+    "expected_count": 1
+  },
+  {
+    "name": "invalid_page",
+    "input": {"page_num": -1, "page_size": 10},
+    "expected_status": 400,
+    "expected_code": 0
+  },
+  {
+    "name": "page_size_too_large",
+    "input": {"page_num": 1, "page_size": 101},
+    "expected_status": 400,
+    "expected_code": 0
+  }
+]

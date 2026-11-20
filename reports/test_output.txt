@@ -1,0 +1,17 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.14.0, pytest-9.2.0, pluggy-1.7.0 -- /Users/naomi/PycharmProjects/AI-TestLab/.venv/bin/python
+cachedir: .pytest_cache
+metadata: {'Python': '3.14.0', 'Platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'Packages': {'pytest': '9.2.0', 'pluggy': '1.7.0'}, 'Plugins': {'metadata': '3.1.1', 'html': '4.2.0', 'anyio': '4.16.0'}, 'JAVA_HOME': '/Library/Java/JavaVirtualMachines/zulu-'}
+rootdir: /Users/naomi/PycharmProjects/AI-TestLab
+plugins: metadata-3.1.1, html-4.2.0, anyio-4.16.0
+collecting ... collected 6 items
+
+tests/test_api.py::test_flow_list_success PASSED                         [ 16%]
+tests/test_api.py::test_flow_list_invalid_page PASSED                    [ 33%]
+tests/test_api.py::test_flow_list_data_driven[first_page] PASSED         [ 50%]
+tests/test_api.py::test_flow_list_data_driven[second_page] PASSED        [ 66%]
+tests/test_api.py::test_flow_list_data_driven[invalid_page] PASSED       [ 83%]
+tests/test_api.py::test_flow_list_data_driven[page_size_too_large] PASSED [100%]
+
+- Generated html report: file:///Users/naomi/PycharmProjects/AI-TestLab/reports/report.html -
+============================== 6 passed in 0.10s ===============================
